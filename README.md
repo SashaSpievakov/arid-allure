@@ -1,4 +1,4 @@
-# Plants Shop Landing
+# Plants Shop Landing 🪴
 
 ### [View Deployment](https://alexandrspevakov.github.io/plants-shop-landing/) &nbsp; 🖥️
 

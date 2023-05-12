@@ -8,8 +8,8 @@
 
 ## Description
 
-> ### A store which sells and explores
+> ### A store that sells and explores
 >
-> ### a stunning selection of unique cacti,
+> ### a selection of unique cacti,
 >
 > ### adding a touch of desert-inspired beauty to your homes.

@@ -1,6 +1,6 @@
 # Arid Allure
 
-![Website Preview](/public/assets/arid-allure.webp)
+![Website Preview](/assets/img/arid-allure.webp)
 
 ## [View Deployment](https://sashaspievakov.github.io/arid-allure/)
 

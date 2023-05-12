@@ -1,25 +1,15 @@
-# Plants Shop Landing 🪴
+# Arid Allure
 
-### [View Deployment](https://sashaspievakov.github.io/plants-shop-landing/) &nbsp; 🖥️
+![Website Preview](/public/assets/arid-allure.webp)
+
+## [View Deployment](https://sashaspievakov.github.io/arid-allure/)
 
 <br/>
 
-## Technologies ⚙️
+## Description
 
-### Main
-  * HTML5
-  * CSS3
-  * JavaScript ES6 +
-  * SCSS
-  * BEM
-  
-### Additional
-  * Scroll Reveal (animation library)
-  
-### Features ✨
-  * Responsive Design
-  * Dark and Light Theme
-  
-<br/>
-  
-## [My Contacts](https://github.com/AlexandrSpevakov#contact-me) &nbsp; 👈
+> ### A store which sells and explores
+>
+> ### a stunning selection of unique cacti,
+>
+> ### adding a touch of desert-inspired beauty to your homes.

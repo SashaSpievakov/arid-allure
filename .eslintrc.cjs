@@ -31,5 +31,6 @@ module.exports = {
     'testing-library/no-render-in-setup': 0,
     'import/no-extraneous-dependencies': 0,
     'import/prefer-default-export': 0,
+    'jsx-a11y/anchor-is-valid': 0,
   },
 };

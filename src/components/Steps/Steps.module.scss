@@ -1,0 +1,86 @@
+.steps {
+  &__bg {
+    background-color: var(--first-color);
+    padding: 3rem 2rem 2rem;
+    border-radius: 1rem;
+  }
+
+  &__container {
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__card {
+    background-color: var(--container-color);
+    padding: 2.5rem 3rem 2rem 1.5rem;
+    border-radius: 1rem;
+
+    &:hover .steps__cardNumber {
+      transform: translateY(-0.25rem);
+    }
+
+    &Number {
+      display: inline-block;
+      background-color: var(--first-color-alt);
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.25rem;
+      font-size: var(--h2-font-size);
+      margin-bottom: var(--mb-1-5);
+      transition: 0.3s;
+
+      &:hover {
+        cursor: default;
+      }
+    }
+
+    &Title {
+      font-size: var(--h3-font-size);
+      margin-bottom: var(--mb-0-5);
+    }
+
+    &Description {
+      font-size: var(--small-font-size);
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .steps {
+    &__bg {
+      padding: 2rem 1rem;
+    }
+
+    &__card {
+      padding: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .steps {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .steps {
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__bg {
+      padding: 3.5rem 2.5rem;
+    }
+
+    &__cardTitle {
+      font-size: var(--normal-font-size);
+    }
+  }
+}

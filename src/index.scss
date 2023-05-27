@@ -7,12 +7,12 @@
   padding: 5.5rem 0 1rem;
 
   &__title,
-  &__title-center {
+  &__title_centered {
     font-size: var(--h2-font-size);
     margin-bottom: var(--mb-2);
     line-height: 130%;
 
-    &-center {
+    &_centered {
       text-align: center;
     }
   }
@@ -48,7 +48,7 @@
     padding: 8rem 0 1rem;
 
     &__title,
-    &__title-center {
+    &__title_centered {
       font-size: var(--h1-font-size);
     }
   }

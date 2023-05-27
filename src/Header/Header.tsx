@@ -46,7 +46,7 @@ const Header = () => {
         <section className={styles.nav__btns}>
           <MoonLineIcon
             className={styles.changeTheme}
-            size="1.4rem"
+            size="1.7rem"
             d="theme-button"
           />
 

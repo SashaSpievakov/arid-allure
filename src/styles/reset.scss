@@ -50,3 +50,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@media screen and (min-width: 767px) {
+  body {
+    margin: 0;
+  }
+}

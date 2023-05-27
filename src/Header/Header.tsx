@@ -1,52 +1,61 @@
+import { useState } from 'react';
+import LeafLineIcon from 'remixicon-react/LeafLineIcon';
+import CloseLineIcon from 'remixicon-react/CloseLineIcon';
+import MoonLineIcon from 'remixicon-react/MoonLineIcon';
+import MenuLineIcon from 'remixicon-react/MenuLineIcon';
+
+import styles from './Header.module.scss';
+
+const menuItems: string[] = ['Home', 'About', 'Products', 'FAQs', 'Contact'];
+
 const Header = () => {
+  const [activeLink, setActiveLink] = useState('Home');
+
+  const handleOnClickLink = (link: string) => {
+    setActiveLink(link);
+  };
+
   return (
-    <header className="header" id="header">
-      <nav className="nav container">
-        <a href="#" className="nav__logo">
-          {/* <i className="ri-leaf-line nav__logo-icon"></i> Arid Allure */}
+    <header className={styles.header} id="header">
+      <nav className={`${styles.nav} container`}>
+        <a href="#" className={styles.nav__logo}>
+          <LeafLineIcon className={styles.nav__logoIcon} size="1.7em" /> Arid
+          Allure
         </a>
 
-        <div className="nav__menu" id="nav-menu">
-          <ul className="nav__list">
-            <li className="nav__item">
-              <a href="#home" className="nav__link active-link">
-                Home
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#about" className="nav__link">
-                About
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#products" className="nav__link">
-                Products
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#faqs" className="nav__link">
-                FAQs
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#contact" className="nav__link">
-                Contact Us
-              </a>
-            </li>
+        <section className={styles.nav__menu} id="nav-menu">
+          <ul className={styles.nav__list}>
+            {menuItems.map((item) => (
+              <li key={item} className={styles.nav__item}>
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  className={`${styles.nav__link} ${
+                    activeLink === item && styles.activeLink
+                  }`}
+                  onClick={() => handleOnClickLink(item)}
+                >
+                  {item}
+                </a>
+              </li>
+            ))}
           </ul>
 
-          <div className="nav__close" id="nav-close">
-            {/* <i className="ri-close-line"></i> */}
-          </div>
-        </div>
+          <CloseLineIcon className={styles.nav__close} id="nav-close" />
+        </section>
 
-        <div className="nav__btns">
-          {/* <i className="ri-moon-line change-theme" id="theme-button"></i> */}
+        <section className={styles.nav__btns}>
+          <MoonLineIcon
+            className={styles.changeTheme}
+            size="1.4rem"
+            d="theme-button"
+          />
 
-          <div className="nav__toggle" id="nav-toggle">
-            {/* <i className="ri-menu-line"></i> */}
-          </div>
-        </div>
+          <MenuLineIcon
+            className={styles.nav__toggle}
+            id="nav-toggle"
+            size="1.4rem"
+          />
+        </section>
       </nav>
     </header>
   );

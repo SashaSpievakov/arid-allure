@@ -30,3 +30,25 @@
 .main {
   overflow: hidden; // For animation
 }
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 8rem 0 1rem;
+
+    &__title,
+    &__title-center {
+      font-size: var(--h1-font-size);
+    }
+  }
+}

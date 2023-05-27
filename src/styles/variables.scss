@@ -1,4 +1,7 @@
-@import '@fontsource/poppins';
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
 
 :root {
   --body-font: 'Poppins', sans-serif;
@@ -35,4 +38,17 @@
 
   --z-tooltip: 10;
   --z-fixed: 100;
+}
+
+@media screen and (min-width: 992px) {
+  /* Responsive typography */
+  :root {
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }

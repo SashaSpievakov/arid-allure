@@ -1,5 +1,6 @@
-import Header from './Header/Header';
-import Hero from './Hero/Hero';
+import About from './components/About/About';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <main className="main">
         <Hero />
+        <About />
       </main>
     </>
   );

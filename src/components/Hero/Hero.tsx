@@ -3,7 +3,7 @@ import FacebookFillIcon from 'remixicon-react/FacebookFillIcon';
 import InstagramLineIcon from 'remixicon-react/InstagramLineIcon';
 import TwitterFillIcon from 'remixicon-react/TwitterFillIcon';
 
-import imgSrc from '../img/home.png';
+import imgSrc from '../../img/home.png';
 import styles from './Hero.module.scss';
 
 const Hero = () => {

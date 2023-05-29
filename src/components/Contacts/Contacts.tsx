@@ -63,7 +63,6 @@ const Contacts = () => {
                 name="message"
                 className={styles.contact__input}
               />
-              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
               <label htmlFor="message" className={styles.contact__label}>
                 Message
               </label>

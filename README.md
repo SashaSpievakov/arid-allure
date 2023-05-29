@@ -1,8 +1,8 @@
 # Arid Allure
 
-![Website Preview](/assets/img/arid-allure.webp)
+![Website Preview](/assets/src/img/arid-allure.webp)
 
-## [View Deployment](https://sashaspievakov.github.io/arid-allure/)
+## [View Deployment](https://arid-allure.netlify.app/)
 
 <br/>
 

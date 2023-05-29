@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import LeafLineIcon from 'remixicon-react/LeafLineIcon';
 import CloseLineIcon from 'remixicon-react/CloseLineIcon';
 import MoonLineIcon from 'remixicon-react/MoonLineIcon';
@@ -10,13 +10,33 @@ const menuItems: string[] = ['Home', 'About', 'Products', 'FAQs', 'Contact'];
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState('Home');
+  const [isScrollPoint, setIsScrollPoint] = useState(false);
 
   const handleOnClickLink = (link: string) => {
     setActiveLink(link);
   };
 
+  useEffect(() => {
+    const handleScrollCheck = () => {
+      if (window.scrollY >= 80) {
+        setIsScrollPoint(true);
+      } else {
+        setIsScrollPoint(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScrollCheck);
+
+    return () => {
+      window.removeEventListener('scroll', handleScrollCheck);
+    };
+  }, []);
+
   return (
-    <header className={styles.header} id="header">
+    <header
+      className={`${styles.header} ${isScrollPoint && styles.scrollHeader}`}
+      id="header"
+    >
       <nav className={`${styles.nav} container`}>
         <a href="#" className={styles.nav__logo}>
           <LeafLineIcon className={styles.nav__logoIcon} size="1.7em" /> Arid

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import LeafLineIcon from 'remixicon-react/LeafLineIcon';
 import CloseLineIcon from 'remixicon-react/CloseLineIcon';
 import MoonLineIcon from 'remixicon-react/MoonLineIcon';
+import SunLineIcon from 'remixicon-react/SunLineIcon';
 import MenuLineIcon from 'remixicon-react/MenuLineIcon';
 
 import styles from './Header.module.scss';
@@ -11,6 +12,7 @@ const menuItems: string[] = ['Home', 'About', 'Products', 'FAQs', 'Contact'];
 const Header = () => {
   const [activeLink, setActiveLink] = useState('Home');
   const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
   const [isScrollPoint, setIsScrollPoint] = useState(false);
   const menuRef = useRef<HTMLElement>(null);
 
@@ -25,6 +27,10 @@ const Header = () => {
 
   const handleOnClickOpen = () => {
     setIsOpen(true);
+  };
+
+  const handleOnClickTheme = () => {
+    setIsDark(!isDark);
   };
 
   useEffect(() => {
@@ -63,9 +69,13 @@ const Header = () => {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    document.body.classList.toggle('dark-theme');
+  }, [isDark]);
+
   return (
     <header
-      className={`${styles.header} ${isScrollPoint && styles.scrollHeader}`}
+      className={`${styles.header} ${isScrollPoint && 'scrollHeader'}`}
       id="header"
     >
       <nav className={`${styles.nav} container`}>
@@ -103,7 +113,19 @@ const Header = () => {
         </section>
 
         <section className={styles.nav__btns}>
-          <MoonLineIcon className={styles.changeTheme} size={20} />
+          {isDark ? (
+            <SunLineIcon
+              className={styles.changeTheme}
+              size={20}
+              onClick={handleOnClickTheme}
+            />
+          ) : (
+            <MoonLineIcon
+              className={styles.changeTheme}
+              size={20}
+              onClick={handleOnClickTheme}
+            />
+          )}
 
           <MenuLineIcon
             className={styles.nav__toggle}

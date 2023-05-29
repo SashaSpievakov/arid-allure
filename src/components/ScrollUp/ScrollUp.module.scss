@@ -24,16 +24,6 @@
   bottom: 3rem;
 }
 
-::-webkit-scrollbar {
-  width: 0.6rem;
-  background: hsl(var(--hue), 4%, 53%);
-
-  &-thumb {
-    background: hsl(var(--hue), 4%, 29%);
-    border-radius: 0.5rem;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .scrollup {
     right: 3rem;

@@ -25,7 +25,7 @@ const Footer = () => {
             to stay update
           </h3>
 
-          <div className={styles.footer__subscribe}>
+          <div className={styles.footer__subscribe} id="footer-subscribe">
             <input
               type="email"
               placeholder="Enter your email"

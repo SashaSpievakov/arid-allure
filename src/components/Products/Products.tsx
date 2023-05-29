@@ -23,7 +23,7 @@ const Products = () => {
 
       <div className={`${styles.product__container} grid`}>
         <article className={styles.product__card}>
-          <div className={styles.product__circle} />
+          <div className={`${styles.product__circle} product-circle`} />
 
           <img src={src1} alt="Cacti Plant" className={styles.product__img} />
 
@@ -39,7 +39,7 @@ const Products = () => {
         </article>
 
         <article className={styles.product__card}>
-          <div className={styles.product__circle} />
+          <div className={`${styles.product__circle} product-circle`} />
 
           <img src={src2} alt="Cactus Plant" className={styles.product__img} />
 
@@ -55,7 +55,7 @@ const Products = () => {
         </article>
 
         <article className={styles.product__card}>
-          <div className={styles.product__circle} />
+          <div className={`${styles.product__circle} product-circle`} />
 
           <img
             src={src3}
@@ -75,7 +75,7 @@ const Products = () => {
         </article>
 
         <article className={styles.product__card}>
-          <div className={styles.product__circle} />
+          <div className={`${styles.product__circle} product-circle`} />
 
           <img
             src={src4}
@@ -95,7 +95,7 @@ const Products = () => {
         </article>
 
         <article className={styles.product__card}>
-          <div className={styles.product__circle} />
+          <div className={`${styles.product__circle} product-circle`} />
 
           <img
             src={src5}
@@ -115,7 +115,7 @@ const Products = () => {
         </article>
 
         <article className={styles.product__card}>
-          <div className={styles.product__circle} />
+          <div className={`${styles.product__circle} product-circle`} />
 
           <img src={src6} alt="Green Plant" className={styles.product__img} />
 

@@ -3,7 +3,7 @@ import styles from './Steps.module.scss';
 const Steps = () => {
   return (
     <section className={`${styles.steps} section container`}>
-      <div className={styles.steps__bg}>
+      <div className={styles.steps__bg} id="steps-bg">
         <h2 className={`${styles.steps__title} section__title_centered`}>
           Steps to start your <br />
           plants off right

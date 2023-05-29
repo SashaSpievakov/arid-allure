@@ -1,4 +1,5 @@
 import About from './components/About/About';
+import Contacts from './components/Contacts/Contacts';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Products from './components/Products/Products';
@@ -15,6 +16,7 @@ function App() {
         <Steps />
         <Products />
         <Questions />
+        <Contacts />
       </main>
     </>
   );

@@ -1,6 +1,6 @@
 # Arid Allure
 
-![Website Preview](/assets/src/img/arid-allure.webp)
+![Website Preview](/src/img/arid-allure.webp)
 
 ## [View Deployment](https://arid-allure.netlify.app/)
 

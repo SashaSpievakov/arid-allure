@@ -17,7 +17,7 @@ const Footer = () => {
         <div className={styles.footer__content}>
           <a href="#" className={styles.footer__logo}>
             <LeafLineIcon className={styles.footer__logoIcon} size="1.7em" />{' '}
-            Plantex
+            Arid Allure
           </a>
 
           <h3 className={styles.footer__title}>
@@ -46,9 +46,9 @@ const Footer = () => {
           <h3 className={styles.footer__title}>Our Address</h3>
 
           <ul className={styles.footer__data}>
-            <li className={styles.footer__information}>2049 - USA</li>
-            <li className={styles.footer__information}>Dakinson St. - 43210</li>
-            <li className={styles.footer__information}>123-456-789</li>
+            <li className={styles.footer__information}>2049 - Canada</li>
+            <li className={styles.footer__information}>Dakinson St. - 3253</li>
+            <li className={styles.footer__information}>420-523-032</li>
           </ul>
         </div>
 
@@ -56,7 +56,7 @@ const Footer = () => {
           <h3 className={styles.footer__title}>Contact Us</h3>
 
           <ul className={styles.footer__data}>
-            <li className={styles.footer__information}>+999 888 777</li>
+            <li className={styles.footer__information}>+1 416 023 0492</li>
 
             <div className={styles.footer__social}>
               <a
@@ -101,9 +101,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className={styles.footer__copy}>
-        &#169; Alexandr S. All rigths reserved
-      </p>
+      <p className={styles.footer__copy}>&#169; Sasha S. All rigths reserved</p>
     </footer>
   );
 };

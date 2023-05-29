@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Products from './components/Products/Products';
 import Questions from './components/Questions/Questions';
+import ScrollUp from './components/ScrollUp/ScrollUp';
 import Steps from './components/Steps/Steps';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Contacts />
       </main>
       <Footer />
+      <ScrollUp />
     </>
   );
 }

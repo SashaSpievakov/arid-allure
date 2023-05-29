@@ -66,10 +66,16 @@
       color: var(--first-color);
     }
   }
+
+  &__btns {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 1rem;
+  }
 }
 
 .showMenu {
-  right: 0;
+  right: 0 !important;
 }
 
 .scrollHeader {
@@ -93,7 +99,6 @@
 
 .changeTheme {
   color: var(--title-color);
-  padding-top: 4px;
   cursor: pointer;
 }
 
